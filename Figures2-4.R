@@ -1,5 +1,6 @@
 library('truncnorm')
 library('FNN')
+library(fields)
 
 Sampling_Z<-function(SumofAllTess,y){
   active_indexes<-which(y==1)
