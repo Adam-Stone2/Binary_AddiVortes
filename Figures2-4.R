@@ -370,6 +370,29 @@ image.plot(
   legend.mar = 3
 )
 
+
+# Map probabilities to colours
+point_colours <- gradient_palette(100)[as.numeric(cut(Addi_results_sin$ProbTest, breaks = 100))]
+point_colours_bart <- gradient_palette(100)[as.numeric(cut(colMeans(bart_results_sin$yhat.test), breaks = 100))]
+
+plot(x, col = ifelse(y_sinusoidal_true > 0, "blue", "red"), main = "Rotated Axes (True)")
+
+plot(x[TestSet,], col = point_colours, pch = 16, main = "Probability Gradient Plot", xlab = "x1", ylab = "x2")
+
+par(mar = c(4, 4, 4, 4))
+
+plot(x[TestSet,], col = point_colours_bart, pch = 16, main = "Probability Gradient Plot", xlab = "x1", ylab = "x2")
+
+image.plot(
+  zlim = c(0, 1),  # The range of probabilities
+  legend.only = TRUE,  # Only add the legend (not the full image)
+  col = gradient_palette(100),  # Use the gradient palette
+  legend.lab = "Probability Of Being Active",  # Label for the legend # Distance of the label from the bar
+  legend.line = 3,                 # Distance of the label from the bar
+  legend.width = 1.5,              # Width of the colour bar
+  legend.mar = 3
+)
+
                          
 set.seed(14)  # For reproducibility
 n <- 2000       # Number of points
