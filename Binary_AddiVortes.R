@@ -1,3 +1,10 @@
+if (!requireNamespace("truncnorm", quietly = TRUE)) {
+  install.packages("truncnorm")
+}
+if (!requireNamespace("FNN", quietly = TRUE)) {
+  install.packages("FNN")
+}
+
 library('truncnorm')
 library('FNN')
 
