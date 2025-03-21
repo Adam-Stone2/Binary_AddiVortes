@@ -102,11 +102,11 @@ Reproducing Figures in the paper
 
 **Warning:** These figure use parallel processing using up to 10 cores at a time, producing these figure is only recommended if you have 12+ cores.
 
-To reproduce the figures 1-4 in the paper, source the following Github page by running:
+To reproduce the figures 2-4 in the paper, source the following Github page by running:
 
 ```r
 
-source_url("https://raw.githubusercontent.com/anonymous2738/Heteroscedastic_AddiVortes/main/Figure1-4.R")
+source_url("https://raw.githubusercontent.com/adam-stone2/Binary_AddiVortes/main/Figures2-4.R")
 
 ```
 To reproduce the figures 5 in the paper, source the following Github page by running:
