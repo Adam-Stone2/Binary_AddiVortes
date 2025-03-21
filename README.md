@@ -23,7 +23,7 @@ if (!requireNamespace("devtools", quietly = TRUE)) {
 }
 library(devtools)
 
-source_url("https://raw.githubusercontent.com/Adam-stone2/Binary_AddiVortes/main/Algorithm.R")
+source_url("https://raw.githubusercontent.com/Adam-Stone2/Binary_AddiVortes/main/Binary_AddiVortes.R")
 
 ```
 The following function can then be used in Rstudio.
